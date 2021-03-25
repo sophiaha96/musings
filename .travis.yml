@@ -5,8 +5,8 @@ cache:
   directories:
   - node_modules
 script:
-  - yarn test
-  - yarn start build
+  - npm test
+  - mom run build
 deploy:
   provider: pages
   skip_cleanup: true
