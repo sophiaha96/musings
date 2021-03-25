@@ -22,7 +22,11 @@ const theme = createMuiTheme({
   },
   
   typography: {
-    fontFamily: 'Italiana',
+    fontFamily: [
+      'Italiana',
+      'serif',
+    ].join(','),
+
     h3: {
       color: COLORS.FLORAL_WHITE,
       fontWeight: 'bold',
