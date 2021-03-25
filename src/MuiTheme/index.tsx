@@ -24,6 +24,7 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: [
       'Italiana',
+      'Playfair Display',
       'serif',
     ].join(','),
 
@@ -37,6 +38,7 @@ const theme = createMuiTheme({
     },
     body1: {
       color: COLORS.FLORAL_WHITE,
+      fontFamily: 'Playfair Display',
       fontSize: 18,
     },
     body2: {
