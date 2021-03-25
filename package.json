@@ -1,23 +1,26 @@
 {
-  "homepage": "https://sophiaha96.github.io/blog",
-  "name": "blog",
+  "homepage": "https://sophiaha96.github.io/",
+  "name": "musings-sh",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@reach/router": "^1.3.4",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.14.2",
-    "@types/react-dom": "^16.9.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@material-ui/core": "4.11.3",
+    "@material-ui/icons": "4.11.2",
+    "@reach/router": "1.3.4",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "@types/jest": "26.0.15",
+    "@types/node": "12.0.0",
+    "@types/react": "16.14.2",
+    "@types/react-dom": "16.9.8",
+    "axios": "0.21.1",
+    "react": "16.14.0",
+    "react-async": "10.0.1",
+    "react-dom": "17.0.1",
     "react-scripts": "4.0.1",
-    "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
+    "typescript": "4.0.3",
+    "web-vitals": "0.2.4"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -48,5 +51,9 @@
   "devDependencies": {
     "@types/reach__router": "^1.3.7",
     "gh-pages": "^3.1.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:sophiaha96/blog.git",
+  "author": "Sophia Ha <sophiaha96@gmail.com>",
+  "license": "MIT"
 }
