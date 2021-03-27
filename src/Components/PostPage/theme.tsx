@@ -24,9 +24,8 @@ const useStyles = makeStyles((theme) => ({
 
   font: {
     color: COLORS.FLORAL_WHITE,
-    fontFamily: 'Playfair Display',
-    fontSize: 19,
-    fontWeight: 550,
+    fontSize: 17,
+    fontWeight: 600,
   },
 
   space: {
