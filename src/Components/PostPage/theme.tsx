@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     height: '100%',
     width: '100vw',
-    
   },
 
   postRoot: {
@@ -21,6 +20,13 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(5),
     marginTop: theme.spacing(5),
     backgroundColor: COLORS.PAPER,
+  },
+
+  font: {
+    color: COLORS.FLORAL_WHITE,
+    fontFamily: 'Playfair Display',
+    fontSize: 19,
+    fontWeight: 550,
   },
 
   space: {

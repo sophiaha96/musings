@@ -2,7 +2,6 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 export const COLORS = {
   PINK: '#e57373',
-  LIGHT_PINK: '#ffcdd2',
   FLORAL_WHITE: '#fffde7',
   PAPER: '#424242',
   BACKGROUND: '#212121',
@@ -40,6 +39,7 @@ const theme = createMuiTheme({
       color: COLORS.FLORAL_WHITE,
       fontFamily: 'Playfair Display',
       fontSize: 18,
+      fontWeight: 580,
     },
     body2: {
       color: COLORS.PINK,
@@ -57,7 +57,8 @@ const theme = createMuiTheme({
   overrides: {
     MuiButton: {
       outlined: {borderRadius: 0}
-    }
+    },
+
   }
 });
 

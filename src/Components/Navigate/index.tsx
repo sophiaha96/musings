@@ -13,7 +13,7 @@ export default function Navigate() {
   const executeScroll = () => {
     if(delta.current <= 3)
       delta.current = delta.current + 2
-    position.current = position.current + delta.current + 650
+    position.current = position.current + delta.current + 750
     return position.current
   }
 

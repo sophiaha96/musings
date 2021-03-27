@@ -2,7 +2,8 @@ import React, { Fragment, useState, useEffect } from 'react'
 import useStyles from './theme'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
-import Grid from '@material-ui/core/Grid';
+import Grid from '@material-ui/core/Grid'
+import Markdown from 'react-markdown'
 import { RouteComponentProps, useLocation } from '@reach/router'
 import IPost, { defaultPost } from '../../Posts/interface'
 import { archive } from '../../Posts/index'
@@ -19,6 +20,7 @@ export default function MainPage(props: RouteComponentProps<{location: {state: {
       setPost(props.location?.state.post)
     else 
       setPost(archive[archive.length - postIndex])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -30,9 +32,9 @@ export default function MainPage(props: RouteComponentProps<{location: {state: {
             <Typography variant="caption" align="right">{post.date}</Typography>
             <Typography variant="h3" align="left" gutterBottom>{post.title}</Typography>
             <Typography variant="h6" gutterBottom>{post.subtitle}</Typography>
-            <Typography variant="body1" style={{ whiteSpace: 'pre-line' }}>
-              {post.body}
-            </Typography>
+            <div className={classes.font} > 
+              <Markdown source={post.body} />
+            </div>
           </Paper>
           </div>
         </Grid>

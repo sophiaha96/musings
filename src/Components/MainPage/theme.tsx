@@ -21,6 +21,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: COLORS.PAPER,
   },
 
+  font: {
+    color: COLORS.FLORAL_WHITE,
+    fontFamily: 'Playfair Display',
+    fontSize: 19,
+    fontWeight: 550,
+  },
+
   more: {
     alignSelf: 'end',
     bottom: 0,
