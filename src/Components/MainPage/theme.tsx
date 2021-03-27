@@ -5,7 +5,6 @@ const useStyles = makeStyles((theme) => ({
   
   root: {
     display: 'flex',
-    height: '100%',
     width: '100vw',
   },
 
@@ -16,11 +15,9 @@ const useStyles = makeStyles((theme) => ({
 
   paper: {
     display: 'grid',
-    gridTemplateRows: '.5fr 2fr 1.5fr 4fr 1fr',
-    height: '100%',
-    maxHeight: '700px',
     padding: theme.spacing(5),
     marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(3),
     backgroundColor: COLORS.PAPER,
   },
 

@@ -9,10 +9,6 @@ const useStyles = makeStyles((theme: Theme) =>
       width: theme.spacing(5),
       height: theme.spacing(5),
       zIndex: theme.zIndex.drawer + 2,
-      [theme.breakpoints.down('xs')]: {
-        right: theme.spacing(5),
-        top: theme.spacing(92),
-      }
     },
 
     down: {
@@ -22,10 +18,6 @@ const useStyles = makeStyles((theme: Theme) =>
       width: theme.spacing(5),
       height: theme.spacing(5),
       zIndex: theme.zIndex.drawer + 2,
-      [theme.breakpoints.down('xs')]: {
-        right: theme.spacing(5),
-        top: theme.spacing(100),
-      }
     },
 
   }))

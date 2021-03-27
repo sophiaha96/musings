@@ -1,15 +1,25 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import useStyles from './theme'
 import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid';
-import { RouteComponentProps } from '@reach/router'
+import { RouteComponentProps, useLocation } from '@reach/router'
 import IPost, { defaultPost } from '../../Posts/interface'
+import { archive } from '../../Posts/index'
 
-
-export default function MainPage(props: RouteComponentProps<{location: {state: { post: IPost }}}>/* , post: IPost */): JSX.Element {
+export default function MainPage(props: RouteComponentProps<{location: {state: { post: IPost }}}>): JSX.Element {
   const classes = useStyles()
-  const post: IPost = props.location?.state.post ?? defaultPost
+  const { pathname } = useLocation()
+  const postIndex: number = parseInt(pathname.substring(pathname.lastIndexOf('/') + 1))
+
+  const [post, setPost] = useState<IPost>(defaultPost)
+
+  useEffect(() => {
+    if (props.location?.state)
+      setPost(props.location?.state.post)
+    else 
+      setPost(archive[archive.length - postIndex])
+  }, [])
 
   return (
     <Fragment key={post.id}>
